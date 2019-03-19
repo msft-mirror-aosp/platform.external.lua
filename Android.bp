@@ -19,6 +19,7 @@ cc_library_static {
         "-Werror",
         "-Wall",
         "-Wno-deprecated-declarations",
+        "-Wno-string-plus-int",
         "-O2",
         "-DLUA_USE_LINUX",
         "-DLUA_COMPAT_5_2",
