@@ -33,7 +33,7 @@ cc_library_static {
 filegroup {
     name: "liblua-sources",
     srcs: [
-        "src/**.c",
+        "src/**/*.c",
     ],
     exclude_srcs: [
         // Exclude the interpreter
