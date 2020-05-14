@@ -29,6 +29,11 @@ cc_library_static {
     srcs: [
         ":liblua-sources"
     ],
+
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.extservices",
+    ],
 }
 
 filegroup {
