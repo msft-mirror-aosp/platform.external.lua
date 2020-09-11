@@ -34,6 +34,7 @@ cc_library_static {
         "//apex_available:platform",
         "com.android.extservices",
     ],
+    visibility: ["//external/libtextclassifier:__subpackages__"],
 }
 
 filegroup {
