@@ -1,6 +1,7 @@
 cc_library_static {
     name: "liblua",
     sdk_version: "current",
+    min_sdk_version: "30",
     cflags: [
         "-Werror",
         "-Wall",
