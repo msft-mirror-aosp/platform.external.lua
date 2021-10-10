@@ -18,6 +18,7 @@ license {
 cc_library_static {
     name: "liblua",
     sdk_version: "current",
+    min_sdk_version: "30",
     cflags: [
         "-Werror",
         "-Wall",
@@ -36,7 +37,10 @@ cc_library_static {
         "//apex_available:platform",
         "com.android.extservices",
     ],
-    visibility: ["//external/libtextclassifier:__subpackages__"],
+    visibility: [
+        "//external/libtextclassifier:__subpackages__",
+        "//packages/services/Car/cpp/telemetry:__subpackages__",
+    ],
 }
 
 filegroup {
