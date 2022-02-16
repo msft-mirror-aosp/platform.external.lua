@@ -36,12 +36,10 @@ cc_library_static {
     apex_available: [
         "//apex_available:platform",
         "com.android.extservices",
-        "com.android.car.framework",
     ],
     visibility: [
         "//external/libtextclassifier:__subpackages__",
         "//packages/services/Car/cpp/telemetry:__subpackages__",
-        "//packages/services/Car/packages/ScriptExecutor:__subpackages__",
     ],
 }
 
