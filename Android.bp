@@ -1,20 +1,3 @@
-package {
-    default_applicable_licenses: ["external_lua_license"],
-}
-
-// Added automatically by a large-scale-change
-// See: http://go/android-license-faq
-license {
-    name: "external_lua_license",
-    visibility: [":__subpackages__"],
-    license_kinds: [
-        "SPDX-license-identifier-MIT",
-    ],
-    license_text: [
-        "LICENSE",
-    ],
-}
-
 cc_library_static {
     name: "liblua",
     sdk_version: "current",
@@ -37,10 +20,7 @@ cc_library_static {
         "//apex_available:platform",
         "com.android.extservices",
     ],
-    visibility: [
-        "//external/libtextclassifier:__subpackages__",
-        "//packages/services/Car/cpp/telemetry:__subpackages__",
-    ],
+    visibility: ["//external/libtextclassifier:__subpackages__"],
 }
 
 filegroup {
